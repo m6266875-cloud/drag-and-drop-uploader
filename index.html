@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fresh Frames — Drag & Drop Uploader</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stage">
+
+  <div class="eyebrow">Photo Intake · Fresh Batch</div>
+  <h1>Drop &amp; Pin Your Photos</h1>
+  <p class="sub">Drag images in below. Each one gets taped into the gallery and comes into focus as it uploads.</p>
+
+  <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Upload images by dragging and dropping, or press enter to browse files">
+    <span class="tape teal left"></span>
+    <span class="tape pink right"></span>
+    <div class="dz-icon-badge">
+      <svg class="dz-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/>
+        <path d="M7 9l5-5 5 5"/>
+        <path d="M12 4v13"/>
+      </svg>
+    </div>
+    <p class="dz-title">Drop your photos here</p>
+    <p class="dz-sub">or <b>click to browse</b> — JPG, PNG, GIF only</p>
+    <input type="file" id="fileInput" accept="image/jpeg,image/png,image/gif" multiple hidden>
+  </div>
+
+  <div class="error-banner" id="errorBanner" hidden role="alert">
+    <span class="stamp">Skipped</span>
+    <p class="error-text" id="errorText"></p>
+    <button class="error-close" id="errorClose" aria-label="Dismiss error">×</button>
+  </div>
+
+  <div class="sheet-header">
+    <div class="sheet-title"><b id="frameCount">0</b> photos in your stack</div>
+    <button class="clear-btn" id="clearBtn">CLEAR ALL</button>
+  </div>
+
+  <div class="contact-sheet" id="contactSheet"></div>
+  <p class="empty-note" id="emptyNote">No photos yet — drop an image above to get started.</p>
+
+</div>
+
+<script src="uploader.js"></script>
+
+
+</body>
+</html>
