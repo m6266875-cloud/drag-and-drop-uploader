@@ -36,19 +36,19 @@ No build tools or dependencies needed — it's a single self-contained HTML file
 2. Open `contact-sheet-uploader.html` directly in your browser
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/m6266875-cloud/drag-and-drop-uploader
+cd your-drag-and-drop-uploader
 ```
 
 Then just double-click `contact-sheet-uploader.html`, or open it via **Live Server** in VS Code.
 
 ## 🔗 Live Demo
 
-*(Add your GitHub Pages link here once enabled — Settings → Pages)*
+(https://github.com/m6266875-cloud/drag-and-drop-uploader/tree/main)
 
 ## 🎥 Demo Video
 
-*(Add a link to your LinkedIn post or YouTube/Loom demo video here)*
+(https://lnkd.in/p/dUt8rntC)
 
 ## 🙋‍♀️ About
 
